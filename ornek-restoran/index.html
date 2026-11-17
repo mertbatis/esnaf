@@ -1,31 +1,54 @@
 <!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lezzet Durağı · Ankara</title><meta name="description" content="Lezzet Durağı: Komisyonsuz paket sipariş, doğrudan bize">
-<style>:root{--c:#dc2626}*{box-sizing:border-box}body{margin:0;font:16px/1.5 system-ui,"Segoe UI",sans-serif;color:#1f2430;background:#f6f6f9}
-.hero{background:linear-gradient(135deg,var(--c),#111827);color:#fff;padding:42px 22px 34px;text-align:center}.hero small{opacity:.85;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
-.hero h1{margin:8px 0 6px;font-size:34px;line-height:1.1}.hero p{margin:0 0 20px;opacity:.92}.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.b{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:15px}.wa{background:#25d366;color:#05310f}.wh{background:#fff;color:#111827}
-main{max-width:720px;margin:-18px auto 0;padding:0 14px 40px}.card{background:#fff;border-radius:18px;box-shadow:0 8px 30px rgba(0,0,0,.07);padding:20px;margin-bottom:14px}
-h2{margin:0 0 12px;font-size:19px}.it{display:flex;align-items:center;gap:10px;padding:11px 4px;border-bottom:1px solid #eee;cursor:pointer}.it .n{flex:1}.it .f{font-weight:700;color:var(--c)}
-.q{display:none;align-items:center;gap:8px}.it.on .q{display:flex}.q button{width:28px;height:28px;border-radius:8px;border:1px solid #ddd;background:#fff;font-size:16px}
-input[type=checkbox]{width:20px;height:20px;accent-color:var(--c)}select,input[type=date],input[type=text]{width:100%;padding:11px;border:1px solid #ddd;border-radius:10px;font:inherit;margin:6px 0 10px}
-.send{width:100%;justify-content:center;font-size:17px;padding:15px}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.info p{margin:6px 0}
-footer{text-align:center;font-size:12px;color:#888;padding:10px 0 30px}.demo{background:#fef3c7;color:#92400e;text-align:center;font-size:13px;padding:6px}</style></head><body>
-<div class="demo">Örnek tasarım: içerik ve fiyatlar temsilidir, sizinle birlikte güncellenir.</div>
-<header class="hero"><small>Restoran · Ankara</small><h1>Lezzet Durağı</h1><p>Komisyonsuz paket sipariş, doğrudan bize</p>
-<div class="btns"><a class="b wh" href="https://www.google.com/maps/search/?api=1&query=Lezzet%20Dura%C4%9F%C4%B1%20Ankara" target="_blank" rel="noopener">Yol tarifi</a></div></header>
-<main>
-<section class="card"><h2>Sipariş verin</h2><label class="it"><input type="checkbox" data-i="0" data-ad="Günün çorbası" data-f="120"><span class="n">Günün çorbası</span><span class="f">120 ₺</span><span class="q"><button type="button" class="m">−</button><b>1</b><button type="button" class="p">+</button></span></label><label class="it"><input type="checkbox" data-i="1" data-ad="Izgara köfte" data-f="380"><span class="n">Izgara köfte</span><span class="f">380 ₺</span><span class="q"><button type="button" class="m">−</button><b>1</b><button type="button" class="p">+</button></span></label><label class="it"><input type="checkbox" data-i="2" data-ad="Tavuk şiş" data-f="340"><span class="n">Tavuk şiş</span><span class="f">340 ₺</span><span class="q"><button type="button" class="m">−</button><b>1</b><button type="button" class="p">+</button></span></label><label class="it"><input type="checkbox" data-i="3" data-ad="Pide" data-f="260"><span class="n">Pide</span><span class="f">260 ₺</span><span class="q"><button type="button" class="m">−</button><b>1</b><button type="button" class="p">+</button></span></label><label class="it"><input type="checkbox" data-i="4" data-ad="Künefe" data-f="220"><span class="n">Künefe</span><span class="f">220 ₺</span><span class="q"><button type="button" class="m">−</button><b>1</b><button type="button" class="p">+</button></span></label>
-<label style="display:block;margin-top:12px">Adres / not<input type="text" id="not" placeholder="Teslimat adresi ya da masa numarası"></label>
-<label>Adınız<input type="text" id="kim" placeholder="Adınız soyadınız"></label>
-<button class="b wa send" id="gonder">WhatsApp ile siparişi gönder</button></section>
-<section class="card info"><h2>Bilgi</h2><p>🕘 Her gün 09:00 – 21:00</p></section>
-</main><footer>Lezzet Durağı · 2026</footer>
+<title>Lezzet Durağı · Ankara</title><meta name="description" content="Lezzet Durağı — Komisyonsuz paket sipariş, doğrudan bize">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Cormorant+Garamond:wght@500;700&family=Cinzel:wght@500;700&family=Montserrat:wght@400;600&family=Lato:wght@400;700&display=swap">
+<style>
+:root{--v:#b8862f;--z:#0b1426;--k:#111d35;--y:#eef2f8;--s:#a7b3c6}*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-width:none}html::-webkit-scrollbar{display:none}body{margin:0;background:var(--z);color:var(--y);font:16px/1.65 'Montserrat', system-ui, sans-serif}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:90px 22px 70px;
+background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.35) 40%,#0b1426),url('https://images.pexels.com/photos/1327393/pexels-photo-1327393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center/cover}
+.mono{width:86px;height:86px;margin:0 auto 18px;border:1.5px solid var(--v);border-radius:50%;display:grid;place-items:center;font:700 30px 'Cinzel', Georgia, serif;color:var(--v);background:rgba(0,0,0,.25);backdrop-filter:blur(4px)}
+.ust{color:var(--v);letter-spacing:.35em;text-transform:uppercase;font-size:12px;font-weight:600}
+h1{font:700 clamp(42px,8vw,78px)/1.04 'Cinzel', Georgia, serif;margin:12px 0 10px;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.5)}
+.slogan{color:#f3ead8;font-size:18px;margin:0 auto 30px;max-width:560px}
+.cizgi{display:flex;align-items:center;gap:14px;justify-content:center;color:var(--v);margin:0 auto 26px;max-width:280px}.cizgi:before,.cizgi:after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--v),transparent)}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.b{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:2px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px;text-decoration:none;cursor:pointer;border:1px solid var(--v)}
+.alt{background:linear-gradient(135deg,var(--v),#f3dc9a 50%,var(--v));color:#1a1408;border:0;box-shadow:0 10px 30px rgba(0,0,0,.35)}.cer{color:#fff;background:rgba(255,255,255,.06)}
+section{max-width:980px;margin:0 auto;padding:70px 22px}
+.bas{text-align:center;margin-bottom:34px}.bas small{color:var(--v);letter-spacing:.3em;text-transform:uppercase;font-size:12px}.bas h2{font:700 clamp(30px,5vw,44px) 'Cinzel', Georgia, serif;margin:8px 0 0}
+.panel{background:var(--k);border:1px solid color-mix(in srgb,var(--v) 35%,transparent);padding:34px clamp(18px,4vw,46px);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.it{display:flex;align-items:baseline;gap:12px;padding:15px 2px;cursor:pointer;border-bottom:1px solid color-mix(in srgb,var(--s) 18%,transparent)}
+.it .n{font:600 20px 'Cinzel', Georgia, serif}.dot{flex:1;border-bottom:1px dotted color-mix(in srgb,var(--v) 60%,transparent);transform:translateY(-5px)}.it .f{color:var(--v);font-weight:600;white-space:nowrap}
+.it input{accent-color:var(--v);width:18px;height:18px;transform:translateY(2px)}.q{display:none;gap:8px;align-items:center;margin-left:8px}.it.on .q{display:inline-flex}.q button{width:28px;height:28px;border:1px solid var(--v);background:transparent;color:var(--y);cursor:pointer}
+.it.on .n{color:var(--v)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}.form label{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--s)}
+.form input,.form select{width:100%;margin-top:6px;padding:13px;background:transparent;border:1px solid color-mix(in srgb,var(--s) 40%,transparent);color:var(--y);font:inherit}.tam{grid-column:1/-1}
+.gonder{width:100%;justify-content:center;margin-top:22px;padding:18px}
+.galeri{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:220px 220px;gap:12px}.galeri div{background:center/cover;filter:saturate(1.05)}.galeri div:first-child{grid-row:1/3}
+.bilgi{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;text-align:center}.bilgi div{padding:26px;border:1px solid color-mix(in srgb,var(--v) 30%,transparent)}.bilgi b{display:block;color:var(--v);letter-spacing:.2em;font-size:12px;text-transform:uppercase;margin-bottom:8px}.bilgi a{color:var(--y)}
+footer{text-align:center;padding:40px 20px 90px;color:var(--s);font-size:13px}footer .mono{width:56px;height:56px;font-size:20px;margin-bottom:10px}
+.yuzen{position:fixed;right:18px;bottom:18px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.35);z-index:9}
+.demo{position:fixed;top:0;left:0;right:0;background:rgba(0,0,0,.7);color:#f3dc9a;text-align:center;font-size:12px;padding:5px;z-index:10;letter-spacing:.05em}
+@media(max-width:640px){.form{grid-template-columns:1fr}.galeri{grid-template-columns:1fr 1fr;grid-template-rows:180px 140px}.galeri div:first-child{grid-column:1/3;grid-row:auto}.it .n{font-size:18px}}
+</style></head><body>
+<div class="demo">Size özel örnek tasarım · içerik ve fiyatlar birlikte güncellenir</div>
+<header class="hero"><div><div class="mono">LD</div><div class="ust">Restoran · Ankara</div>
+<h1>Lezzet Durağı</h1><div class="cizgi">✦</div><p class="slogan">Komisyonsuz paket sipariş, doğrudan bize</p>
+<div class="btns"><a class="b alt" href="#form">Sipariş Ver</a><a class="b cer" href="https://www.google.com/maps/search/?api=1&query=Lezzet%20Dura%C4%9F%C4%B1%20Ankara" target="_blank" rel="noopener">Yol Tarifi</a></div></div></header>
+<section id="form"><div class="bas"><small>Menümüz</small><h2>Seçin, WhatsApp'tan gönderin</h2></div>
+<div class="panel"><label class="it"><input type="checkbox" data-ad="Günün çorbası"><span class="n">Günün çorbası</span><span class="dot"></span><span class="f">120 ₺</span><span class="q"><button type="button" class="m">−</button><b>1</b><button type="button" class="p">+</button></span></label><label class="it"><input type="checkbox" data-ad="Izgara köfte"><span class="n">Izgara köfte</span><span class="dot"></span><span class="f">380 ₺</span><span class="q"><button type="button" class="m">−</button><b>1</b><button type="button" class="p">+</button></span></label><label class="it"><input type="checkbox" data-ad="Tavuk şiş"><span class="n">Tavuk şiş</span><span class="dot"></span><span class="f">340 ₺</span><span class="q"><button type="button" class="m">−</button><b>1</b><button type="button" class="p">+</button></span></label><label class="it"><input type="checkbox" data-ad="Pide"><span class="n">Pide</span><span class="dot"></span><span class="f">260 ₺</span><span class="q"><button type="button" class="m">−</button><b>1</b><button type="button" class="p">+</button></span></label><label class="it"><input type="checkbox" data-ad="Künefe"><span class="n">Künefe</span><span class="dot"></span><span class="f">220 ₺</span><span class="q"><button type="button" class="m">−</button><b>1</b><button type="button" class="p">+</button></span></label>
+<div class="form"><label class="tam">Adres / Not<input id="not" placeholder="Teslimat adresi ya da not"></label><label class="tam">Adınız<input id="kim" placeholder="Adınız soyadınız"></label></div>
+<button class="b alt gonder" id="gonder">Siparişi WhatsApp ile Gönder</button></div></section>
+<section><div class="galeri"><div style="background-image:url('https://images.pexels.com/photos/12107010/pexels-photo-12107010.jpeg?auto=compress&cs=tinysrgb&h=350')"></div><div style="background-image:url('https://images.pexels.com/photos/15671371/pexels-photo-15671371.jpeg?auto=compress&cs=tinysrgb&h=350')"></div><div style="background-image:url('https://images.pexels.com/photos/15671371/pexels-photo-15671371.jpeg?auto=compress&cs=tinysrgb&h=350')"></div></div></section>
+<section><div class="bilgi"><div><b>Adres</b>Ankara</div><div><b>Telefon</b>—</div><div><b>Çalışma Saatleri</b>Her gün 09:00 – 21:00</div></div></section>
+<footer><div class="mono">LD</div><div>Lezzet Durağı · 2026</div><div style="margin-top:6px;font-size:11px;opacity:.7">Fotoğraflar: Rene Terp, Nadin Sh, Luis Becerra  Fotógrafo / Pexels</div></footer>
+
 <script>
 const WA=null;const MOD="siparis";
-document.querySelectorAll('.it').forEach(l=>{const c=l.querySelector('input');c.addEventListener('change',()=>l.classList.toggle('on',c.checked));l.querySelectorAll('.q button').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();const n=l.querySelector('.q b');let v=+n.textContent+(b.classList.contains('p')?1:-1);n.textContent=Math.max(1,v);}));});
-document.getElementById('gonder').onclick=()=>{const s=[...document.querySelectorAll('.it.on')].map(l=>{const i=l.querySelector('input');const q=l.querySelector('.q b');return (q?q.textContent+' x ':'')+i.dataset.ad;});
+document.querySelectorAll('.it').forEach(l=>{const c=l.querySelector('input');c.addEventListener('change',()=>l.classList.toggle('on',c.checked));l.querySelectorAll('.q button').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();const n=l.querySelector('.q b');n.textContent=Math.max(1,+n.textContent+(b.classList.contains('p')?1:-1));}));});
+document.getElementById('gonder').onclick=()=>{const s=[...document.querySelectorAll('.it.on')].map(l=>{const q=l.querySelector('.q b');return (q?q.textContent+' x ':'')+l.querySelector('input').dataset.ad;});
 if(!s.length){alert('Lütfen en az bir seçim yapın.');return;}const kim=document.getElementById('kim').value;
 let m=(MOD==='siparis'?'Merhaba, sipariş vermek istiyorum:\n':'Merhaba, randevu almak istiyorum:\n')+s.map(x=>'• '+x).join('\n');
 if(MOD==='randevu'){m+='\nGün: '+(document.getElementById('gun').value||'en yakın uygun gün')+'\nSaat: '+document.getElementById('saat').value;}else{const n=document.getElementById('not').value;if(n)m+='\nNot: '+n;}
-if(kim)m+='\nAd: '+kim;const u=WA?'https://wa.me/'+WA+'?text='+encodeURIComponent(m):'sms:?body='+encodeURIComponent(m);window.open(u,'_blank');};
+if(kim)m+='\nAd: '+kim;window.open(WA?'https://wa.me/'+WA+'?text='+encodeURIComponent(m):'sms:?body='+encodeURIComponent(m),'_blank');};
 </script></body></html>
